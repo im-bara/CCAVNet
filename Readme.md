@@ -1,9 +1,21 @@
-# 🌀 CCAV (Chaotic Chisa-chan Abstract Vision)
+# 🌀 CCAV (Chaotic Chisa-chan Abstract Vision)/(Clean Chaotic Abstract Vision)
 
-> Clean Chaotic Abstract Vision — custom method buat akselerasi training CNN dengan inspirasi Dropout, Early Stopping, dan traversal ala DFS.
+> Clean Chaotic Abstract Vision, custom method buat akselerasi training CNN dengan inspirasi Dropout, Early Stopping, dan traversal ala DFS.
 > Cocok buat eksperimen di hardware terbatas (contoh: laptop iGPU).
+> Masih tahap pengembangan, masih banyak fitur yang akan ditambahkan.
 
 ---
+
+**Status:**
+
+- **Development**: Active
+- **Documentation**: In Progress
+- **Testing**: Ongoing
+- **Version**: 0.1.0
+
+---
+
+
 
 ## 📖 Deskripsi
 CCAV adalah varian sederhana dari CNN yang pakai metode **chaotic node traversal**.
@@ -41,7 +53,7 @@ Tujuannya:
 
 ---
 
-## 🚀 Instalasi
+## 🚀 Tutor ya Kids
 ```bash
 git clone https://github.com/im-bara/CCAVNet.git
 cd CCAVNet
@@ -55,10 +67,15 @@ torchvision
 numpy
 scikit-learn
 pillow
+```
+
+## Install (Sunnah)
+```requirements.txt
 torch-directml   # optional buat Windows + iGPU
 torchvision-directml   # optional buat Windows + iGPU
 ```
-## Cara Vakai (Godvlan Mode)
+
+## Cara Vakai/Pakai/Use apalah (Godvlan Mode)
 ```bash
 python train.py --dataset ./data --ephocs 50 --chaos 0.5
 ```
@@ -66,7 +83,6 @@ python train.py --dataset ./data --ephocs 50 --chaos 0.5
 - `--dataset`: Path to dataset directory.
 - `--epochs`: Number of training epochs.
 - `--chaos`: Probability of node skipping in Chaos Layer. (Rekomendasi: 0.3-0.7) lebih dari itu Mending Lu pake Dropout atau lainnya
-- `--directml`: Use DirectML backend for GPU acceleration.
 
 ## 📌 Note ya Cuy
 - Data Set Kecil 150 kurang lebih sih.
@@ -81,8 +97,8 @@ python train.py --dataset ./data --ephocs 50 --chaos 0.5
 - Bandingin sama MobileNet/ResNet
 
 ## 📜 Reference
-- [Paper](https://www.nature.com/articles/nature14539)
-- [Paper](https://arxiv.org/pdf/1512.03385)
-- [Paper](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
+- [Paper](https://www.nature.com/articles/nature14539) - Deep Learning (Yann LeCun, Yoshua Bengio, Geoffrey Hinton)
+- [Paper](https://arxiv.org/pdf/1512.03385) - Deep Residual Learning for Image Recognition (Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun)
+- [Paper](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf) - Dropout: A Simple Way to Prevent Neural Networks from Overfitting (Geoffrey E. Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov)
 - Depth-First Search Graph Theory
-- [Code](https://github.com/im-bara/CCAVNet)
+- Breadth-First Search Graph Theory
